@@ -1,0 +1,125 @@
+h2::before {
+  content: ">"  
+}
+
+h2::after {
+    content: "<"
+}
+
+#next-page:hover:after {
+    content: "<---Click TEXT to get to transition page";
+    opacity: .5;
+}
+
+::selection {
+    background: black;
+    color: green;
+}
+
+body {
+    background: lightgreen;
+    font-family: monospace;
+    text-align: center;
+    font-size: 2em;
+}
+
+h2 {
+    padding: 1em;
+}
+
+h2:hover {
+    background: green;
+}
+
+h2:hover:first-line {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2:hover a {
+    border: 3px solid lightgreen;
+}
+
+div {
+    padding: 1em;
+    width: 1em;
+}
+
+.ay {
+    background: slategray;
+    transition: all ease-in-out 1.5s;
+    width: 5em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.bee {
+    background: blue;
+    transition: all ease-in 1s;
+    width: 5em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.cee {
+    background: blueviolet;
+    transition: all linear .5s;
+    width: 5em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.ay:hover {
+    width: 15em;
+}
+
+.bee:hover {
+    width: 25em;
+}
+
+.cee:hover {
+    width: 50em;
+}
+
+p {
+    text-align: start;
+    color: lightgreen;
+}
+
+p::before {
+    content: ">"
+}
+
+.innerDiv1 {
+    transition: all ease-in 1s;
+}
+
+.ay:hover .innerDiv1 {
+    background: red;
+    width: 5em;
+}
+
+.innerDiv2{
+    transition: all ease-in 1s;
+}
+
+.bee:hover .innerDiv2 {
+    background: orange;
+    width: 15em;
+}
+
+.innerDiv3 {
+    transition: all ease-in .5s;
+}
+
+.cee:hover .innerDiv3 {
+    background: green;
+    width: 25em;
+}
